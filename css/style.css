@@ -1,0 +1,197 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 53px;
+  background: #212121;
+}
+
+.menu {
+  color: #ffffff;
+  list-style-type: none;
+}
+
+.menu .menu_link {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 15px;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 14px 71px;
+}
+
+.menu_item {
+  border-right: black 2px dotted;
+  padding: 0 28px 0 0;
+}
+
+.subheader {
+  /* position: relative; */
+  position: absolute;
+  width: 100%;
+  height: 87px;
+  background: rgba(0, 0, 0, 0.6);
+  /*   z-index: 2;
+ */
+}
+
+.subheader .uber_logo {
+  display: block;
+  margin: 19px 0 0 0;
+}
+
+.subheader .subheader_official {
+  font-weight: 200;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.subheader .subheader_call {
+  margin: 21px 37px 0 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.subheader .subheader_number {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.subheader .subheader_button {
+  margin: 21px 0 0 0;
+  width: 172px;
+  height: 46px;
+  background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo {
+  min-height: 800px;
+  background: url("./../img/uber_bg.jpg") center center/cover no-repeat;
+  padding-top: 135px;
+  /*   z-index: 1;
+ */
+}
+
+.promo .promo_header {
+  font-weight: 900;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo .promo_subheader {
+  font-weight: 900;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo .promo_descr {
+  margin: 18px 77px 0 77px;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo .promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  font-size: 18px;
+  text-align: center;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  width: 259px;
+  height: 63px;
+  background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.reasons {
+  height: 850px;
+  background: white;
+  padding: 18px 0 64px 0;
+}
+
+.reasons .reasons_btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0 3px 5px 0;
+  width: 115px;
+  height: 27px;
+  color: #ffffff;
+  background: #000000;
+}
+
+.reasons .reasons_header {
+  margin: 25px 0 0 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.reasons .reasons_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 116px;
+  height: 116px;
+  border-radius: 100%;
+  background: #1eacc7;
+}
+
+.reasons .reasons_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 33px;
+}
+
+.reasons .reasons_info .reason_subtitle {
+  font-size: 17px;
+  color: #1eacc7;
+}
+
+.reasons .reasons_info {
+  font-size: 17px;
+  width: 371px;
+  min-height: 150px;
+  margin-left: 40px;
+}
+
+.reasons .reasons_block {
+  margin: 25px 0 0 0;
+}
+
+.row {
+  vertical-align: top;
+}
