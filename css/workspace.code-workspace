@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\..\\..\\..\\crafting"
+	},
+	{
+		"path": "..\\..\\..\\..\\..\\freelance"
+	},
+	{
+		"path": "..\\..\\..\\..\\..\\udemyTask"
+	},
+	{
+		"path": "..\\..\\..\\.."
+	},
+	{
+		"path": "..\\..\\..\\..\\sass"
+	},
+	{
+		"path": "..\\.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "udemy"
+  }
+}

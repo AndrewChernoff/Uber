@@ -1,4 +1,4 @@
-html {
+* {
   font-family: "Roboto", sans-serif;
 }
 
@@ -135,22 +135,22 @@ header {
 }
 
 .reasons {
-  height: 850px;
+  min-height: 850px;
   background: white;
   padding: 18px 0 64px 0;
 }
 
-.reasons .reasons_btn {
+.reasons .label {
   display: block;
   margin: 0 auto;
-  padding: 0 3px 5px 0;
+  padding: 0 3px 3px 3px;
   width: 115px;
   height: 27px;
   color: #ffffff;
   background: #000000;
 }
 
-.reasons .reasons_header {
+.reasons .title {
   margin: 25px 0 0 0;
   text-align: center;
   font-weight: bold;
