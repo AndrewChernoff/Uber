@@ -2,10 +2,8 @@
   font-family: "Roboto", sans-serif;
 }
 
-* {
-  outline: 1px solid rebeccapurple;
-}
-
+/** *
+ * outline: 1px solid rebeccapurple **/
 header {
   top: 0;
   width: 100%;
@@ -19,6 +17,10 @@ nav {
   height: 50px;
   background-color: #212121;
   z-index: 5;
+}
+
+.hamburger {
+  display: none;
 }
 
 .menu {
@@ -171,7 +173,7 @@ nav {
   display: block;
   margin: 0 auto;
   padding: 0 3px 3px 3px;
-  width: 115px;
+  width: 118px;
   height: 27px;
   color: #ffffff;
   background: #000000;
@@ -518,6 +520,28 @@ footer .lang {
   text-decoration: none;
 }
 
+.xs-visible {
+  display: none;
+}
+
+.dark_layer_car {
+  display: none;
+}
+.dark_layer_invisible_title {
+  display: none;
+}
+
+.world_title {
+  display: none;
+}
+.world_subtitle {
+  display: none;
+}
+
+.invisible {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .menu_link {
     font-size: 13px;
@@ -533,7 +557,7 @@ footer .lang {
   }
 
   .mobile_item {
-    width: 280px;
+    width: 100%;
   }
   .mobile_item_title {
     padding-top: 83px;
@@ -622,7 +646,7 @@ footer .lang {
         -ms-flex-align: center;
             align-items: center;
     height: 100vh;
-    width: 30%;
+    width: 40%;
     top: 0;
     left: -100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -636,8 +660,293 @@ footer .lang {
   .menu_item {
     border-right: none;
     margin: 15px 0;
+    text-align: center;
   }
   .menu_link {
-    font-size: 19px;
+    font-size: 15px;
+  }
+
+  .mobile_item {
+    width: 100%;
+  }
+
+  .empty {
+    min-height: 350px;
+  }
+  .empty .car {
+    top: -42%;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 5px 0 0 0;
+    background-color: white;
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -6px;
+  }
+  .hamburger_active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  .subheader_button {
+    margin: 6px 0 0 70px;
+    width: 150px;
+  }
+  .subheader_call {
+    display: none;
+  }
+  .subheader_number {
+    margin-left: 95px;
+    font-size: 14px;
+  }
+
+  .xs-hidden {
+    display: none;
+  }
+
+  .xs-visible {
+    display: block;
+  }
+
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer_divider {
+    display: none;
+  }
+  footer .invisible {
+    display: block;
+    width: 255px;
+    height: 6px;
+    margin-bottom: 30px;
+  }
+  footer .main_part .large_links a {
+    font-size: 15px;
+  }
+  footer .main_part .small_links a {
+    font-size: 11px;
+  }
+  footer .lang {
+    margin: 15px 0 15px 0;
+  }
+}
+@media (max-width: 575px) {
+  header {
+    height: 32px;
+  }
+
+  .menu_active {
+    padding-top: 30px;
+    left: 0;
+    width: 70%;
+  }
+  .menu_link {
+    font-size: 16px;
+  }
+
+  .subheader {
+    margin-top: 50px;
+    height: 70px;
+  }
+  .subheader_official {
+    display: none;
+  }
+  .subheader img {
+    margin-top: 23px;
+  }
+  .subheader_number {
+    margin-top: 11px;
+    margin-left: 34px;
+    font-size: 14px;
+  }
+  .subheader_button {
+    margin: -1px 0 0 30px;
+    width: 110px;
+    height: 22px;
+  }
+  .subheader_button span {
+    font-size: 10px;
+  }
+
+  .promo {
+    min-height: 400px;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_header {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  .promo_subheader {
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin: 53px auto 35px auto;
+  }
+
+  .reasons_subtitle {
+    width: 100%;
+    font-size: 16px;
+    margin-right: 72px;
+  }
+  .reasons_info {
+    font-size: 16px;
+    width: 100%;
+    min-height: 150px;
+    margin-left: -3px;
+  }
+  .reasons .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  .reasons_icon {
+    margin-right: 25px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .mobile {
+    padding: 28px 0 42px 0;
+  }
+  .mobile_item {
+    width: 100%;
+  }
+  .mobile_item_1 {
+    margin: 0 0 0 0;
+  }
+  .mobile_subtitle {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .dark_layer {
+    min-height: 393px;
+    padding: 25px 0 31px 0;
+  }
+  .dark_layer_title {
+    display: none;
+  }
+  .dark_layer_subtitle {
+    display: none;
+  }
+  .dark_layer_car {
+    display: block;
+    margin-top: 45px;
+    width: 100%;
+  }
+  .dark_layer_invisible_title {
+    display: block;
+    margin: 88px 4px 7px 0;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .empty {
+    display: none;
+  }
+
+  .require {
+    padding: 30px 0 30px 0;
+  }
+  .require_title {
+    font-size: 16px;
+  }
+  .require_list {
+    font-size: 14px;
+  }
+  .require_list:before {
+    height: 21px;
+    width: 22px;
+  }
+
+  .world {
+    min-height: 360px;
+    padding: 24px 0 30px 0;
+  }
+  .world_link {
+    margin-top: 240px;
+    font-size: 15px;
+  }
+  .world_title {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .world_subtitle {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  footer {
+    margin: 30px 0 30px 0;
+  }
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer_divider {
+    display: none;
+  }
+  footer .invisible {
+    display: block;
+    width: 255px;
+    height: 6px;
+    margin-bottom: 30px;
+  }
+  footer .main_part .large_links a {
+    font-size: 13px;
+    margin-right: 12px;
+  }
+  footer .main_part .small_links a {
+    margin-right: 50px;
+    font-size: 11px;
+  }
+  footer .lang {
+    margin: 15px 0 15px 0;
   }
 }
