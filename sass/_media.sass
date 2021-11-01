@@ -85,17 +85,16 @@
         background-color: rgba(0, 0, 0, 0.8)
         padding: 20px 15px
         transition: 0.6s all
-
         &_active
             left: 0
-
         &_item
             border-right: none
             margin: 15px 0
             text-align: center
-
         &_link
-            font-size: 15px
+            display: block
+            font-size: 20px
+            padding: 0px 8px
 
     .mobile
         &_item
@@ -133,13 +132,19 @@
         &_button
             margin: 6px 0 0 70px
             width: 150px
-
+            &:hover
+                background: linear-gradient(0deg, $var5 0%, #4ce2ff 100%)
         &_call
             display: none
-
         &_number
+            margin-top: 10px
             margin-left: 95px
             font-size: 14px
+
+    .promo
+        &_btn
+            &:hover
+                background: linear-gradient(0deg, $var5 0%, #4ce2ff 100%)
 
     .xs-hidden
         display: none
@@ -172,7 +177,7 @@
         height: 32px
     .menu
         &_active
-            padding-top: 10px
+            padding-top: 30px
             left: 0
             width: 70%
         &_link
