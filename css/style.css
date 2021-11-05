@@ -663,7 +663,9 @@ footer .lang {
     text-align: center;
   }
   .menu_link {
-    font-size: 15px;
+    display: block;
+    font-size: 20px;
+    padding: 0px 8px;
   }
 
   .mobile_item {
@@ -712,12 +714,22 @@ footer .lang {
     margin: 6px 0 0 70px;
     width: 150px;
   }
+  .subheader_button:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  }
   .subheader_call {
     display: none;
   }
   .subheader_number {
+    margin-top: 10px;
     margin-left: 95px;
     font-size: 14px;
+  }
+
+  .promo_btn:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
   }
 
   .xs-hidden {
